@@ -4,7 +4,7 @@ export default class Header extends React.Component{
 
     render(){
         return(
-            <div className="row com-header">
+            <div className="row com-header" style={{width:"100vw"}}>
                 <span className="col-md-4 logo" data-scroll-reveal="wait 0.5s then enter left 1s"><img src={require("../../res/images/logo.png")}/></span>
                 <span className="col-md-7 sign">与其依靠别人，不如相信自己......</span>
                 <span className="weather col-md-1">

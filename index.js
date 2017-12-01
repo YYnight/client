@@ -12,8 +12,8 @@ import {Button} from 'react-bootstrap'
 
 
 const instance = document.querySelector(".instance");
-const demo = document.querySelector(".demo");
-const loading = new JParticles.waveLoading(demo,{
+const load = document.querySelector(".loading");
+const loading = new JParticles.waveLoading(load,{
     font:'normal 500 14px Arial',
     resize:false
 });
