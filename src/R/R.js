@@ -3,3 +3,7 @@ export const PhotoActionType = {
     PHOTO_LOADED:'photo_loaded',
     PHOTOGRAPH_LOADED:'photograph_loaded',
 }
+
+export const MusicActionType = {
+    PLAYLIST_LOADED:'playlist_loaded',
+}

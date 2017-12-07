@@ -7,6 +7,7 @@ import Nav from '../public/component/Nav'
 import Content from '../content/component/Content'
 import Photo from '../photo/component/Photo'
 import Log from '../log/component/Log'
+import Music from '../music/component/Music'
 import './main.css'
 
 const items = [
@@ -28,6 +29,7 @@ class Main extends React.Component{
                     <Content>
                         <Route path="/photos" component={Photo}/>
                         <Route path="/log" component={Log}/>
+                        <Route path="/music" component={Music}/>
                     </Content>
                 </div>
             </Router>

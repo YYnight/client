@@ -1,0 +1,57 @@
+
+.m-top{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+.music-nav{
+    width: 800px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.m-nav li{
+    text-align: center;
+    float: left;
+    list-style: none;
+    line-height: 70px;
+    width: 130px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.input-con{
+    margin: 13px 0 0 200px;
+    float: left;
+    position: relative;
+}
+.icon{
+    padding: 0;
+    margin: 0;
+    top: -7px;
+    left: -8px;
+    position: absolute;
+    background: transparent;
+    color: #ccc;
+}
+.input{
+    padding-left:34px;
+    height: 30px;
+    border:1px #333 solid;
+    border-radius: 20px;
+    outline: none;
+}
+.m-nav li:hover{
+    background: rgba(213,213,213,0.8);
+}
+
+.clear{
+    clear: both;
+}
+
+.music-content{
+    border: 1px solid #ccc;
+    border-left: none;
+    width: 691px;
+    margin: auto;
+}

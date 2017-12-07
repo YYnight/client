@@ -1,0 +1,25 @@
+.logo{
+    height: 100%;
+    text-align: right;
+}
+.weather{
+    padding: 0px;
+    border-radius: 20% 0 20% 0;
+    background: rgba(255,255,255,0.6);
+    padding-top: 10px;
+    height: 100%;
+}
+.row{
+    height: 100px;
+    box-shadow:0 0.08333rem 0.16667rem 0 #e8e8e8;
+    z-index: 9;
+}
+.sign{
+    padding-top: 60px;
+    color: grey;
+}
+
+.weather-content{
+    width: 160px;
+    height: 70px;
+}

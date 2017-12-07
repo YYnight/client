@@ -11,7 +11,10 @@ class Photo extends React.Component{
 
     componentWillMount(){
         console.log(this.props)
-        this.props.findPhotosByPage(1);
+        setTimeout(()=>{
+            console.log(111111)
+            this.props.findPhotosByPage(1)}
+            ,20000);
     }
     componentWillUnmount(){
         this.props.initPhotoData();

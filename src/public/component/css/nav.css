@@ -1,0 +1,36 @@
+.nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    cursor: pointer;
+    margin: 12vw 0 0 0;
+}
+.menu{
+    display: block;
+    position: relative;
+    height: 5vh;
+    line-height: 5vh;
+    margin-bottom: 1vh;
+    background: #fff;
+    padding: 0;
+    width: 10vw;
+    overflow: hidden;
+    color: #333;
+    cursor: pointer;
+    right: -7vw;
+}
+.glyphicon{
+    display: block;
+    float: left;
+    width: 3vw;
+    height: 5vh;
+    top: 0px;
+    line-height: 5vh!important;
+    background: #676871;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 1vw;
+    font-style: normal;
+}

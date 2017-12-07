@@ -7,6 +7,7 @@ import thunkMiddleware from 'redux-thunk'
 import Main from './src/main/Main'
 import JParticles from 'jparticles'
 import photo from './src/photo/reducer/Photo'
+import music from './src/music/reducer/Music'
 import $ from 'jquery';
 import {Button} from 'react-bootstrap'
 
@@ -85,6 +86,7 @@ window.onload = function(){
 
 const reducers = combineReducers({
     photo,
+    music
 })
 let store = createStore(reducers,applyMiddleware(thunkMiddleware))
 

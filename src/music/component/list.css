@@ -1,0 +1,151 @@
+.blk{
+    background: rgba(255,255,255,0.6);
+    border-left: 1px solid #ccc;
+    float: left;
+    width: 230px;
+}
+.top{
+    height: 100px;
+    padding: 20px 0 0 19px;
+}
+.cver{
+    float: left;
+    display: inline;
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.cver img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cver .msk{
+    background-position: -145px -57px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tit{
+    float: left;
+    width: 116px;
+    margin: 6px 0 0 10px;
+}
+
+a{
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    color:#333;
+    text-decoration:underline;
+}
+.f-thide{
+    font-weight: bold;
+    margin: 0;
+    padding: 2px 0px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.music-btn{
+    margin-top: 10px;
+}
+.music-btn a{
+    display: block;
+    float: left;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    text-indent: -9999px;
+}
+.s-bg{
+    background: url("../../res/images/index.png") no-repeat;
+}
+.s-bg-9{
+    background-position: -267px -205px;
+}
+.s-bg-10{
+    background-position: -300px -205px;
+}
+.s-bg-10:hover {
+    background-position: -300px -235px;
+}
+.s-bg-11{
+    background-position: -267px -268px;
+}
+.blk ol{
+    height: 319px;
+    margin-left: 50px;
+    line-height: 32px;
+}
+.blk ol li{
+    height: 32px;
+    list-style: none;
+}
+
+.blk ol li:hover .oper{
+    display: inline-block;
+}
+.blk ol li:hover .nm{
+    width: 97px;
+}
+
+.blk ol .no{
+    float: left;
+    position: relative;
+    width: 35px;
+    height: 32px;
+    margin-left: -35px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.blk ol .no-top{
+    color: red;
+}
+
+.blk ol .nm{
+    float: left;
+    width: 170px;
+    height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.blk ol .oper{
+    display: none;
+    float: right;
+    width: 82px;
+    margin-top: 7px;
+}
+
+.blk ol .oper a{
+    float: left;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}
+
+.blk .more{
+    clear: both;
+    height: 32px;
+    margin-right: 32px;
+    text-align: right;
+    line-height: 32px;
+}
+.u-icn{
+    background: url("../../res/images/icon.png") no-repeat;
+    background-position: 0 -700px;
+    margin: 2px 6px 0 0;
+}

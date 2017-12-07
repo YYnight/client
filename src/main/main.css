@@ -1,0 +1,22 @@
+a:hover,a:link,a:visited{
+    text-decoration-line: none;
+}
+a{
+    cursor: pointer;
+}
+.msk{
+    background: url("../res/images/coverall.png") no-repeat;
+}
+
+.words .name{
+    max-width: 300px;
+    color: #e8e8e8;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    word-wrap:normal;
+}
+
+.f-fl{
+    float: left;
+}

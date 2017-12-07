@@ -1,0 +1,201 @@
+.albums{
+    width:100%;
+    float: left;
+}
+.albums-inner{
+    float: left;
+    width:15vh;
+    min-width:300px;
+    margin:1vh 0 0 1.5vw;
+}
+.albums-tab{
+    float: left;
+    width:15vw;
+    min-width:300px;
+    height:10vh;
+    min-height:200px;
+}
+.albums-tab img{
+    height:auto;
+    width: 290px;
+    background-color: rgba(255,255,255,1);
+    padding:5px;
+}
+
+.albums-tab-text{
+    float: left;
+    width:100%;
+    text-align: center;
+    color: rgba(53,117,159,1);
+    margin-top:15px;
+    font-size: 18px;
+}
+
+.albums-tab-text a{
+    overflow: hidden;
+    color: #F00;
+}
+.albums-tab-text span{
+    font-size: 14px;
+    color: rgba(102,102,102,1);
+}
+.photo-anim{
+    position: relative;
+}
+.photo-anim img{
+    position: absolute;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.photo-anim:hover img{
+    z-index: 1;
+}
+
+.photo-anim:hover img:nth-child(1){
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+.photo-anim:hover img:nth-child(2){
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+.photo-anim:hover img:nth-child(3){
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+.photo-anim:hover img:nth-child(4){
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.photo-anim:hover img:nth-child(5){
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.photo-anim:hover img:nth-child(6){
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+.photo-anim:hover img:nth-child(7){
+    transform: scale(0.9);
+}
+
+.photoContent{
+    overflow: hidden;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+.photoContent ul{
+    list-style: none;
+}
+.photoContent ul li{
+    border:solid 5px lightgoldenrodyellow;
+    margin: 2vh 0 0 2vw;
+    float: left;
+    position: relative;
+}
+.photoContent ul li .info{
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.photoContent ul li:hover{
+    transform: scale(1.05);
+}
+.photoContent ul li:hover .info{
+    display:block;
+    animation: fadeIn 0.5s;
+}
+.photoContent ul li img{
+    width: 28vh;
+    height: 25vh;
+    min-width: 200px;
+    min-height:200px;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        height:0;
+    }
+    100%{
+        opacity: 1;
+        height: 5vh;
+    }
+}
+
+/*遮罩层*/
+.mask{
+    width:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    z-index: 1000;
+    background-color: rgba(0,0,0,.8);
+    filter:alpha(Opacity=20);
+    display: none;
+}
+
+.maskContent{
+    width:60vw;
+    height: 80vh;
+    border:solid 1px #2aabd2;
+    background-color: rgba(255,255,255,.7);
+    position: absolute;
+    z-index:1005;
+    left:50%;
+    top:50%;
+    margin-left:-30vw;
+    margin-top: -40vh;
+}
+.mask .maskContent .close{
+    position: absolute;
+    top: 1vh;
+    right:1vh;
+}
+.mask .maskContent .neirong{
+    width:40vw;
+    height: 60vh;
+    border:solid 1px #2aabd2;
+    position: absolute;
+    z-index:1005;
+    left:50%;
+    top:50%;
+    margin-left:-20vw;
+    margin-top: -30vh;
+    text-align: center;
+    line-height: 60vh;
+}
+.mask .maskContent .neirong img{
+    width:40vw;
+    height: 60vh;
+    margin:auto;
+    max-width: 40vw;
+    max-height: 60vh;
+}
