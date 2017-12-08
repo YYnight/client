@@ -69,7 +69,7 @@ module.exports={
         hot:true,
         proxy:{
             "/api/*":{
-                target:"http://localhost:9999/",
+                target:"http://192.168.2.25:9999/",
                 pathRewrite:{"/api/":"/"}
             }
         }

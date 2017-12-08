@@ -4,12 +4,10 @@ import "./list.css"
 export default class RecommendList extends React.Component{
 
     playMusic(id){
-        console.log(id)
         this.props.findMusicById(id);
     }
 
     render(){
-        console.log(this.props.source)
         return(
             <div className="blk">
                 <div className="top">

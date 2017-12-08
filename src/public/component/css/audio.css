@@ -22,17 +22,34 @@
 .btns .prv{
     background-position: 0 -130px;
 }
-.btns .pas{
-    background-position: 0 -165px;
+
+.btns .prv:hover{
+    background-position: -30px -130px;
 }
-.btns .ply{
-    widows: 36px;
+.btns .pas{
+    width: 36px;
     height: 36px;
     margin-top: 0;
     background-position: 0 -204px;
 }
+.btns .pas:hover{
+    background-position: -40px -204px;
+}
+.btns .ply{
+    width: 36px;
+    height: 36px;
+    margin-top: 0;
+    background-position: 0 -165px;
+}
+.btns .ply:hover{
+    background-position: -40px -165px;
+}
 .btns .nxt{
     background-position: -80px -130px;
+}
+
+.btns .nxt:hover{
+    background-position: -110px -130px;
 }
 
 .head{
@@ -74,13 +91,11 @@
     color: #9b9b9b;
 }
 
-.m-pbar, .m-pbar .barbg{
-    width: 493px;
-}
 .m-pbar{
     position: relative;
+    width: 493px;
 }
-.m-bar .barbg, .m-pbar .cur, .m-pbar .rdy{
+.m-pbar .barbg, .m-pbar .cur, .m-pbar .rdy{
     height: 9px;
     background-position: right 0;
 }

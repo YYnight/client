@@ -9,12 +9,10 @@ import Audio from '../../public/component/Audio'
 
 class Music extends React.Component{
      componentWillMount(){
-        console.log(this.props)
         this.props.findPlayList();
     }
 
     render(){
-        console.error(this.props)
         return(
             <div className="m-top">
                 <div className="music-nav">
@@ -34,8 +32,8 @@ class Music extends React.Component{
                 </div>:''}
 
 
-                <div className="player" style={{width:"100%",position:"relative",height:"100px"}}>
-                    <Audio/>
+                <div className="player" style={{height:"80px",position:"relative",background:"black",marginTop:"10px"}}>
+                    <Audio {...this.props}/>
                 </div>
                 
             </div>
