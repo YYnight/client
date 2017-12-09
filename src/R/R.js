@@ -9,4 +9,5 @@ export const MusicActionType = {
     PLAY_MUSIC:'play_music',
     OPEN_PLAY_STATE:"open_play_state",
     CANCEL_PLAY_STATE:"cancel_play_state",
+    GET_HOTSINGER:"get_hotSinger",
 }

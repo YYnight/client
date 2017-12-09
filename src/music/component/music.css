@@ -21,7 +21,7 @@
     box-sizing: border-box;
 }
 .input-con{
-    margin: 13px 0 0 200px;
+    margin: 13px 0 0 320px;
     float: left;
     position: relative;
 }
@@ -41,7 +41,7 @@
     border-radius: 20px;
     outline: none;
 }
-.m-nav li:hover{
+.m-nav li:hover,.m-nav .selected{
     background: rgba(213,213,213,0.8);
 }
 
@@ -52,6 +52,6 @@
 .music-content{
     border: 1px solid #ccc;
     border-left: none;
-    width: 691px;
+    width: 799px;
     margin: auto;
 }

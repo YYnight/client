@@ -10,9 +10,7 @@ import './photo.css'
 class Photo extends React.Component{
 
     componentWillMount(){
-        console.log(this.props)
         setTimeout(()=>{
-            console.log(111111)
             this.props.findPhotosByPage(1)}
             ,20000);
     }

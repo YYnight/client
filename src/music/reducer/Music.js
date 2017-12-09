@@ -4,6 +4,7 @@ let initState = {
     playlist:null,
     currentMusic:null,
     playState:false,
+    hotSingers:[],
 }
 
 export default function (state=initState,action){
@@ -28,6 +29,10 @@ export default function (state=initState,action){
         case MusicActionType.CANCEL_PLAY_STATE:
             return Object.assign({},state,{
                 playState:false
+            })
+        case MusicActionType.GET_HOTSINGER:
+            return Object.assign({},state,{
+                hotSingers:action.data
             })
         default:
             return Object.assign({},state)

@@ -25,9 +25,7 @@ export default class Audio extends React.Component{
 
     shouldComponentUpdate(nextProps, nextState){
         const player = document.getElementById("player");
-        console.log(nextState.isPlay)
         if(nextState.isPlay){
-            console.log(player.src!=""&&player.src!=null&&player.src!=undefined)
             if(player.src!=""&&player.src!=null&&player.src!=undefined){
                 player.play();
                 this.progressBar();
@@ -76,9 +74,35 @@ export default class Audio extends React.Component{
         return time.replace('.',':');
     }
 
+    componentDidMount(){
+        let that = this;
+        let bar = document.getElementById("bar");
+        let slider = document.getElementById("slider");
+        let curBar = document.getElementById("cur");
+        let g_player = document.getElementById("g_player");
+        const player = document.getElementById("player");
+        bar.addEventListener("click",function(e){
+            if(that.props.currentMusic){
+                player.currentTime = e.offsetX/bar.offsetWidth*player.duration;
+            }
+        })
+        // slider.addEventListener("mousedown",function(e1){
+        //     console.log(bar.clientLeft)
+            
+        //     g_player.addEventListener("mousemove",function(e){
+        //         if(e.target == this){
+        //             const start = e.offsetX;
+        //             g_player.addEventListener("moveup",function(upEvent){
+        //                 return;
+        //             })
+        //         }
+        //     })
+        // })
+    }
+
     render(){
         return(
-            <div className="wrap" classID="g_player">
+            <div className="wrap" id="g_player">
                 <audio id="player" src={this.props.currentMusic?this.props.currentMusic.musicUrl:""} loop="true"/>
                 <div className="btns">
                     <a className="prv">上一首</a>
@@ -86,7 +110,7 @@ export default class Audio extends React.Component{
                     <a className="nxt">下一首</a>
                 </div>
                 <div className="head j-flag">
-                    <img src={this.props.currentMusic?this.props.currentMusic.picUrl:""} alt="wu"/>
+                    <img src={this.props.currentMusic?this.props.currentMusic.picUrl:""} alt=""/>
                     <a className="head-mask"/>
                 </div>
                 <div className="play">
@@ -95,10 +119,10 @@ export default class Audio extends React.Component{
                         <span className="by f-thide f-fl">{this.props.currentMusic?this.props.currentMusic.author:""}</span>
                     </div>
                     <div className="m-pbar">
-                    <div className="barbg j-flag">
+                    <div className="barbg j-flag" id="bar">
                         <div className="rdy" style={{width:"100%"}}></div>
                         <div className="cur" id="cur">
-                            <span className="f-tdn">
+                            <span className="f-tdn" id="slider">
                                 <i></i>
                             </span>
                         </div>

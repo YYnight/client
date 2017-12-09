@@ -28,7 +28,6 @@ export default class RecommendList extends React.Component{
                         {
                             
                             this.props.source.playlist.tracks.map((value,key)=>{
-                                console.log(1);
                                 if(key<=9){
                                     return(
                                         <li key={key}>

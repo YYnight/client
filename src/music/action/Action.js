@@ -21,6 +21,22 @@ export default{
                 }
             })
     },
+    findMusicByName:(name)=>(dispatch)=>{
+        axios.get(`/api/music/findMusicByName?name=${name}`)
+            .then(res=>res.data)
+            .then(data=>{
+                console.log(data);
+            })
+    },
+    findSingers:()=>(dispatch)=>{
+        axios.get("/api/music/findSingers")
+            .then(res=>res.data)
+            .then(data=>{
+                if(data.code==200){
+                    dispatch({type:MusicActionType.GET_HOTSINGER,data:data.artists})
+                }
+            })
+    },
     cancelPlayState:()=>(dispatch)=>{
         dispatch({type:MusicActionType.CANCEL_PLAY_STATE})
     }
